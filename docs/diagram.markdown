@@ -14,11 +14,38 @@ You can find the source code for Jekyll at GitHub:
 [jekyll][jekyll-organization] /
 [jekyll](https://github.com/jekyll/jekyll)
 
-{% blockdiag %}
-blockdiag {
-   A -> B -> C -> D;
-   A -> E -> F -> G;
-}
-{% endblockdiag %}
+<script type="text/javascript"
+
+  src="https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js">
+
+</script>
+
+<script>
+
+$(document).ready(function() {
+
+    mermaid.initialize({
+
+        theme: 'forest'
+
+    });
+
+});
+
+</script>
+
+<div class="mermaid">
+
+    graph TD
+
+      B[peace]
+
+      B-->C[fa:fa-ban forbidden]
+
+      B-->D(fa:fa-spinner);
+
+      B-->E(fa:fa-camera-retro perhaps?);
+
+</div>
 
 [jekyll-organization]: https://github.com/jekyll
