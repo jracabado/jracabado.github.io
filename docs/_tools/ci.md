@@ -1,0 +1,3 @@
+argocd
+tekton
+droneci
